@@ -18,7 +18,7 @@ jobs:
 
     - name: Get dependencies
       run: |
-        echo %GO_PATH% 1>&3
+        ###echo %GO_PATH% 1>&3
         go get -v -t -d ./...
         if [ -f Gopkg.toml ]; then
             curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
